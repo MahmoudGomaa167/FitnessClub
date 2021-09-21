@@ -1,0 +1,64 @@
+.schedule-section{
+    padding: 80px 0;
+    overflow: hidden;
+    .container{
+        .schedule-section__info{
+            transform: translateX(-150%);
+            transition: all 1s ease;
+            h2{
+                font-size: 30px;
+                padding-bottom: 20px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+                padding-bottom: 20px;
+                color: #222;
+            }
+            img{
+                transform: rotateY(180deg);
+            }
+            &.from-left{
+                transform: translateX(0);
+            }
+        }
+        .schedule-section__table{
+            transform: translateX(150%);
+            transition: all 1s ease;
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 15px;
+                tr{
+                    td{
+                        border: 1px solid #dfdfdf;
+                        padding: 8px;
+                        &.day{
+                            border: transparent;
+                            color: #fff;
+                        }
+                    }
+                    &:nth-child(even){
+                        .day{
+                            background-color: $cardBackgroundColor;
+                        }
+                    }
+                    &:nth-child(odd){
+                        .day{
+                            background-color: #444;
+                        }
+                    }
+                    &:nth-of-type(1){
+                        .day{
+                            background-color: $redColor;
+                        }
+                    }
+                }
+            }
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+    }
+}

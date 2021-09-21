@@ -1,0 +1,37 @@
+.gallery-section{
+    overflow: hidden;
+    h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .gallery-section__images{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 50%;
+            flex: 0 0 50%;
+            filter: grayscale(1);
+            transition: filter 0.25s ease-in-out,
+                        transform 1s ease;
+            &:hover{
+                filter: none;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(3){
+                transform: translateX(-150%);
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4){
+                transform: translateX(150%);
+            }
+            &.from-left{
+                transform: translateX(0);
+            }
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+    }
+}

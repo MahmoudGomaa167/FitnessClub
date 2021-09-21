@@ -1,0 +1,112 @@
+.contact-section{
+    background-color: $cardBackgroundColor;
+    padding: 80px 0;
+    overflow: hidden;
+    .container{
+        .contact-section__form{
+            transform: translateX(-150%);
+            transition: all 1s ease;
+            form{
+                display: flex;
+                flex-direction: column;
+                input,textarea{
+                    background-color: transparent;
+                    color: #fff;
+                    padding: 6px 12px;
+                    border: 1px solid #fff;
+                    margin-bottom: 25px;
+                    &:focus{
+                        outline: none;
+                    }
+                    &::-webkit-inner-spin-button,
+                    &::-webkit-outer-spin-button{
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    &::placeholder{
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+                .submit-btn{
+                    .custom-btn--form{
+                        background-color: $redColor;
+                        padding: 10px 50px;
+                        &:hover{
+                            background-color: transparent;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+            &.from-left{
+                transform: translateX(0);
+            }
+        }
+        .contact-section__info{
+            transform: translateX(150%);
+            transition: all 1s ease;
+            margin-bottom: 30px;
+            h2{
+                color: $redColor;
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 20px;
+            }
+            p{
+                color: #fff;
+                font-size: 15px;
+                padding-bottom: 30px;
+            }
+            .info__social{
+                .social__item{
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .icon{
+                        color: $redColor;
+                        font-size: 20px;
+                        margin-right: 30px;
+                    }
+                }
+            }
+            .info__socialmedia{
+                padding: 30px 0;
+                display: flex;
+                border-bottom: 1px solid #333;
+                a{
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 background-color: $redColor;
+                 width: 40px;
+                 height: 40px;
+                 color: #fff;
+                 transition: all 0.25s ease-in-out;
+                 border: 1px solid transparent;
+                 font-size: 20px;
+                 margin-right: 10px;
+                 &:hover{
+                     background-color: transparent;
+                     border-color: #fff;
+                 }   
+                }
+            }
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+        .copyright{
+            font-size: 15px;
+            color: #c5c5c5;
+        }
+        .developer{
+            color: #c5c5c5;
+            span{
+                color: $redColor;
+            }
+        }
+    }
+}

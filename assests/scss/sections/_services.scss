@@ -1,0 +1,72 @@
+.services-section{
+    padding: 80px 0;
+    background-color: $redColor;
+    color: #fff;
+    overflow: hidden;
+    .container{
+        .services-section__info{
+            transform: translateX(-150%);
+            transition: all 1s ease;
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
+            &.from-left{
+                transform: translateX(0);
+            }
+        }
+        .services-section__accordion{
+            transform: translateX(150%);
+            transition: all 1s ease;
+            .accordion{
+                transition: all 0.5s ease-in-out;
+                margin-bottom: 5px;
+                .accordion__header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 12px 15px;
+                    border-bottom: 1px solid transparent;
+                    cursor: pointer;
+                    background-color: rgba(0,0,0,0.2);
+                    transition: all 0.25s ease-in-out;
+                    h4{
+                        font-size: 20px;
+                    }
+                }
+                .accordion__content{
+                    font-size: 15px;
+                    background-color: $cardBackgroundColor;
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 15px;
+                    transition: max-height 0.3s ease-in-out,
+                                overflow 0.3s ease-in-out,
+                                padding-top 0.3s ease-in-out,
+                                padding-bottom 0.3s ease-in-out;
+                }
+                .accordion__header--active{
+                    background-color: $cardBackgroundColor;
+                    border-bottom-color: #333;
+                }
+                .accordion__content--active{
+                    max-height: 100px;
+                    transition: max-height 0.3s ease-in-out,
+                                overflow 0.3s ease-in-out,
+                                padding-top 0.3s ease-in-out,
+                                padding-bottom 0.3s ease-in-out;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }  
+            }
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+    }
+}

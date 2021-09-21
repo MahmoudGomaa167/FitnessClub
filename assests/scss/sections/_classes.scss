@@ -1,0 +1,85 @@
+.classes-section{
+    padding: 80px 0 50px;
+    overflow: hidden;
+    .container{
+        .classes-section__image{
+            transform: rotateY(180deg)
+                        translateX(150%);
+                        transition: all 1s ease;
+            &.from-left{
+                transform: translateX(0)
+                            rotateY(180deg);
+            }            
+        }
+        .classes-section__info{
+            transform: translateX(150%);
+            transition: all 1s ease;
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+            p{
+                color: #000;
+                font-size: 15px;
+                padding-bottom: 30px;
+            }
+            .info__card{
+                display: flex;
+                margin-bottom: 30px;
+                .card__image{
+                    position: relative;
+                    .price{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background-color: $redColor;
+                        color: #fff;
+                        font-size: 20px;
+                        width: 60px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 500;
+                    }
+                }
+                .card__content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 15px;
+                    background-color: $cardBackgroundColor;
+                    color: #fff;
+                    h4{
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: #fff;
+                        padding-bottom: 20px;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                }
+                &:nth-of-type(2){
+                    .card__image{
+                        .price{
+                            background-color: $cardBackgroundColor;
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                    .card__content{
+                        background-color: $redColor;
+                    }
+                }
+            }
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+    }
+}

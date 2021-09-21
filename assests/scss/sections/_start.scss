@@ -1,0 +1,42 @@
+.start-section{
+    background-color: $cardBackgroundColor;
+    overflow: hidden;
+    .container{
+        .start-section__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            color: #fff;
+            transform: translateX(-150%);
+            transition: all 1s ease;
+            h2{
+                font-size: 30px;
+                font-weight: 500;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
+            .info__button{
+                .custom-btn--red{
+                    background-color: $redColor;
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+            }
+            &.from-left{
+                transform: translateX(0);
+            }
+        }
+        .start-section__image{
+            transform: translateX(150%);
+            transition: all 1s ease;
+            &.from-right{
+                transform: translateX(0);
+            }
+        }
+    }
+}

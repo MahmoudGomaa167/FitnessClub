@@ -1,0 +1,72 @@
+.price-section{
+    padding: 80px 0;
+    .container{
+        .price-section__intro{
+            text-align: center;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 1s ease;
+            .intro__header{
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+            .intro__info{
+                font-size: 15px;
+                padding-bottom: 50px;
+                width: 50%;
+                margin: auto;
+            }
+            &.from-bottom{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .price-section__card{
+            text-align: center;
+            background-color: #f0f0f0;
+            position: relative;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 1s ease;
+            .card__content{
+                padding: 30px 15px;
+                h3{
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+                .content__info{
+                    padding-bottom: 5px;
+                    margin: 0;
+                    font-size: 15px;
+                }
+                .custom-btn--price{
+                    background-color: $redColor;
+                    margin-top: 10px;
+                    &:hover{
+                        background-color: transparent;
+                        color: $cardBackgroundColor;
+                        border-color: $cardBackgroundColor;
+                    }
+                }
+            }
+            .price{
+                position: absolute;
+                width: 100%;
+                background-color: $redColor;
+                top: 0;
+                left: 0;
+                right: 0;
+                color: #fff;
+                font-size: 20px;
+                padding: 15px;
+                font-weight: 700;
+            }
+            &.from-bottom{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+        }
+    }
+}
