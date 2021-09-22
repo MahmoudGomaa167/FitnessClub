@@ -110,3 +110,13 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact-section{
+        .container{
+            .contact-section__form{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -37,3 +37,14 @@ header{
         100%{transform: translateX(0);}
     }
 }
+
+@media screen and (max-width: 550px){
+    header{
+        background-position: center;
+        .home-intro{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+}

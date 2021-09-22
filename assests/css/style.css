@@ -153,33 +153,41 @@ header {
     transform: translateX(120%); }
   100% {
     transform: translateX(0); } }
+@media screen and (max-width: 550px) {
+  header {
+    background-position: center; }
+    header .home-intro h1 {
+      font-size: 30px; } }
 .about-section {
   padding: 80px 0; }
-  .about-section .container .col-md-4 .about-section__card {
+  .about-section .container .col-lg-4 .about-section__card {
     background-color: #222;
     transform: translateY(100%);
     opacity: 0;
     transition: all 1.5s ease; }
-    .about-section .container .col-md-4 .about-section__card .card__info {
+    .about-section .container .col-lg-4 .about-section__card .card__info {
       text-align: center;
       color: #fff;
       padding: 30px; }
-      .about-section .container .col-md-4 .about-section__card .card__info h4 {
+      .about-section .container .col-lg-4 .about-section__card .card__info h4 {
         font-size: 20px;
         padding-bottom: 15px;
         font-weight: 500; }
-      .about-section .container .col-md-4 .about-section__card .card__info p {
+      .about-section .container .col-lg-4 .about-section__card .card__info p {
         font-size: 15px;
         font-weight: normal;
         line-height: 20px; }
-    .about-section .container .col-md-4 .about-section__card.from-bottom {
+    .about-section .container .col-lg-4 .about-section__card.from-bottom {
       transform: translateY(0);
       opacity: 1; }
-  .about-section .container .col-md-4:nth-of-type(2) .about-section__card {
+  .about-section .container .col-lg-4:nth-of-type(2) .about-section__card {
     background-color: #c11325; }
-  .about-section .container .col-md-4:last-of-type .about-section__card {
+  .about-section .container .col-lg-4:last-of-type .about-section__card {
     margin-right: 0; }
 
+@media screen and (max-width: 768px) {
+  .about-section .container .col-md-6 .about-section__card {
+    margin-bottom: 30px; } }
 .services-section {
   padding: 80px 0;
   background-color: #c11325;
@@ -225,13 +233,16 @@ header {
         background-color: #222;
         border-bottom-color: #333; }
       .services-section .container .services-section__accordion .accordion .accordion__content--active {
-        max-height: 100px;
+        max-height: 500px;
         transition: max-height 0.3s ease-in-out, overflow 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
         padding-top: 15px;
         padding-bottom: 15px; }
     .services-section .container .services-section__accordion.from-right {
       transform: translateX(0); }
 
+@media screen and (max-width: 768px) {
+  .services-section .container .services-section__info {
+    margin-bottom: 30px; } }
 .classes-section {
   padding: 80px 0 50px;
   overflow: hidden; }
@@ -294,6 +305,9 @@ header {
     .classes-section .container .classes-section__info.from-right {
       transform: translateX(0); }
 
+@media screen and (max-width: 550px) {
+  .classes-section .container .classes-section__info .info__card {
+    flex-direction: column; } }
 .start-section {
   background-color: #222;
   overflow: hidden; }
@@ -324,6 +338,11 @@ header {
     .start-section .container .start-section__image.from-right {
       transform: translateX(0); }
 
+@media screen and (max-width: 768px) {
+  .start-section {
+    padding-top: 50px; }
+    .start-section .container .start-section__info {
+      margin-bottom: 30px; } }
 .schedule-section {
   padding: 80px 0;
   overflow: hidden; }
@@ -390,6 +409,9 @@ header {
       .gallery-section .gallery-section__images img.from-right {
         transform: translateX(0); }
 
+@media screen and (max-width: 550px) {
+  .gallery-section .gallery-section__images img {
+    flex: 0 0 100%; } }
 .price-section {
   padding: 80px 0; }
   .price-section .container .price-section__intro {
@@ -447,6 +469,11 @@ header {
       transform: translateY(0);
       opacity: 1; }
 
+@media screen and (max-width: 768px) {
+  .price-section .container .price-section__intro .intro__info {
+    width: 100%; }
+  .price-section .container .price-section__card {
+    margin-bottom: 30px; } }
 .contact-section {
   background-color: #222;
   padding: 80px 0;
@@ -530,5 +557,9 @@ header {
     color: #c5c5c5; }
     .contact-section .container .developer span {
       color: #c11325; }
+
+@media screen and (max-width: 768px) {
+  .contact-section .container .contact-section__form {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -70,3 +70,18 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .price-section{
+        .container{
+            .price-section__intro{
+                .intro__info{
+                    width: 100%;
+                }
+            }
+            .price-section__card{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

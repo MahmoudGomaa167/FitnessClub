@@ -35,3 +35,13 @@
         }
     }
 }
+
+@media screen and(max-width: 550px) {
+    .gallery-section{
+        .gallery-section__images{
+            img{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

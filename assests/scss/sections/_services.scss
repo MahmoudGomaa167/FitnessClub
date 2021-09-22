@@ -55,7 +55,7 @@
                     border-bottom-color: #333;
                 }
                 .accordion__content--active{
-                    max-height: 100px;
+                    max-height: 500px;
                     transition: max-height 0.3s ease-in-out,
                                 overflow 0.3s ease-in-out,
                                 padding-top 0.3s ease-in-out,
@@ -66,6 +66,16 @@
             }
             &.from-right{
                 transform: translateX(0);
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .services-section{
+        .container{
+            .services-section__info{
+                margin-bottom: 30px;
             }
         }
     }

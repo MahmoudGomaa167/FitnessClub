@@ -72,7 +72,7 @@ const addActiveLinks = function () {
     
     const sectionObserver = new IntersectionObserver(addActive, {
         root: null,
-        threshold: 0.2
+        threshold: 0.1
     });
     
     
@@ -95,7 +95,7 @@ const aboutTransform = function() {
 
     let aboutObserver = new IntersectionObserver(aboutReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     aboutObserver.observe(aboutSection);
@@ -118,7 +118,7 @@ const servicesTransform = function() {
 
     let servicesObserver = new IntersectionObserver(sectionReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     servicesObserver.observe(servicesSection);
@@ -140,7 +140,7 @@ const classesTransform = function() {
 
     let classesObserver = new IntersectionObserver(classesReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     classesObserver.observe(classesSection);
@@ -162,7 +162,7 @@ const startTransform = function() {
 
     let startObserver = new IntersectionObserver(startReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     startObserver.observe(startSection);
@@ -185,7 +185,7 @@ const scheduleTransform = function() {
 
     let scheduleObserver = new IntersectionObserver(scheduleReveal, {
         root: null,
-         threshold: 0.5
+         threshold: 0.2
     });
 
     scheduleObserver.observe(scheduleSection);
@@ -207,7 +207,7 @@ const galleryTransform = function() {
 
     let galleryObserver = new IntersectionObserver(galleryReveal, {
         root:null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     galleryObserver.observe(gallerySection);
@@ -229,7 +229,7 @@ const priceTransform = function() {
 
     let priceObserver = new IntersectionObserver(priceReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     priceObserver.observe(priceSection)
@@ -251,7 +251,7 @@ const contactTransform = function () {
 
     let contactObserver = new IntersectionObserver(contactReveal, {
         root: null,
-        threshold: 0.5
+        threshold: 0.2
     });
 
     contactObserver.observe(contactSection);

@@ -83,3 +83,15 @@
         }
     }
 }
+
+@media screen and (max-width: 550px) {
+    .classes-section{
+        .container{
+            .classes-section__info{
+                .info__card{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

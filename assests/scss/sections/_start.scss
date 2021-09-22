@@ -40,3 +40,14 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .start-section{
+        padding-top: 50px;
+        .container{
+            .start-section__info{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
